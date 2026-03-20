@@ -19,23 +19,6 @@ npx firebase login
 npm run deploy
 ```
 
-## GitHub Setup
-
-1. Create a new repo at [github.com/new](https://github.com/new) named `geopoint-leads`
-2. Add the remote and push:
-   ```bash
-   git remote add origin https://github.com/YOUR_ORG/geopoint-leads.git
-   git push -u origin main
-   ```
-
-### Auto-deploy on push
-
-Pushing to `main` triggers a deploy. Add `FIREBASE_TOKEN` as a GitHub secret:
-
-1. Run `npx firebase login:ci` locally and copy the token
-2. Repo → Settings → Secrets → Actions → New repository secret
-3. Name: `FIREBASE_TOKEN`, Value: (paste token)
-
 ---
 
 # React + Vite
